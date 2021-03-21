@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version= "2.0">
+  <category>
+    <pattern> hello # </pattern>
+    <template> Nice to meet you!  You can ask me something about web development. </template>
+  </category>
+  
+  <category>
+    <pattern> hi # </pattern>
+    <template><srai>hello</srai></template>
+  </category>
+  
+  <category>
+    <pattern> What is web development</pattern>
+    <template> Web development is about writing and coding in the Web, it includes Web content, server scripting and network security. 
+               Futhermore, it can divide into front end, back end, and full stack, and you can ask me more detail about them.</template>
+  </category>
+  
+  //前端介紹
+  <category>
+    <pattern> * front end </pattern>
+    <template> Front-end is also called client side. It converts all data to to a graphical interface to provide the user viewing and interacting.
+               There are several tools, such as HTML, CSS, and Javascript, that can be used to develop the front end of a website. </template>
+  </category>  
+  
+  //後端介紹
+  <category>
+    <pattern> * back end</pattern>
+    <template> Back-end is also called Server Side. It focuses on databases, server, and website architecture.
+               It contains any behind-the-scene activities on a website, such as account login.
+               The common language about programming a server is including Node.js, PHP, Ruby, and so on.
+               The tools of database are SQL, MongoDB, and so on.</template>
+  </category>
+  
+  //全端介紹
+  <category>
+    <pattern> * full stack</pattern>
+    <template> Full stack is the combination of Front-end and Back-end.
+               A full stack web developer is a person who can develop both client and server software.
+               He/She can program the browser, server, and database.</template>
+  </category>
+  
+  //test
+  <category>
+    <pattern> # test </pattern>
+    <template> 
+        <random>
+            <li>What web development is HTML usually use for</li>
+            <li>Do front end developer focus on server and database</li>
+            <li>Is full stack the combination of front end and back end</li>
+        </random>
+    </template>
+  </category>
+  
+  //問題1的回覆
+  <category> 
+      <pattern>front end</pattern>
+      <that>What web development is HTML usually use for</that>
+      <template>Great! Your answer are right.</template>
+  </category>
+  
+  <category> 
+      <pattern>back end</pattern>
+      <that>What web development is HTML usually use for</that>
+      <template>Sorry, the answer is front end. </template>
+  </category>
+  
+  //問題2的回覆
+  <category> 
+      <pattern>yes</pattern>
+      <that>Do front end developer focus on server and database</that>
+      <template>Oh, no. Maybe you can ask me the detail of front end again.</template>
+  </category>
+  
+  <category> 
+      <pattern>no</pattern>
+      <that>Do front end developer focus on server and database</that>
+      <template>Excellent!</template>
+  </category>
+  
+  //問題3的回覆
+  <category> 
+      <pattern>yes</pattern>
+      <that>Is full stack the combination of front end and back end</that>
+      <template>You are right!!!</template>
+  </category>
+  
+  <category> 
+      <pattern>no</pattern>
+      <that>Is full stack the combination of front end and back end</that>
+      <template>Sorry, you get it wrong </template>
+  </category>
+  
+  <category> 
+      <pattern> * </pattern>
+      <template> Sorry, I can't answer this question!</template>
+  </category>
+</aiml>
